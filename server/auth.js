@@ -22,7 +22,7 @@ exports.token = token => {
 };
 
 exports.auth = async (name, password) => {
-    const user = await users.findOne({ where: { name } });
+    const user = await users.findOne({ where: { name } }); // TODO запрашивать по имени в нижнем регистре
 
     if (user) {
         const match = await bcrypt.compare(password, user.hash);
