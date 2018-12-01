@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Чат</title>
+    <link rel="stylesheet" href="style/main.css">
+	<link type="image/png" rel="shortcut icon" href="ico.png">
+    <script src="script/main.js"></script>
+</head>
+<body>
+    <div class="chat">
+        <div id="messages" class="messages"></div>
+        <input id="message" type="text" class="new-message" placeholder="Ваше сообщение">
+    </div>
+    <div class="service">
+        <div class="service-login">
+            <div class="owner">Вы&nbsp;<span id="your_name">не авторизованы</span></div>
+            <input id="login" type="text" placeholder="Ваше имя">
+            <input id="password" type="password" placeholder="Пароль">
+            <button id="enter">Войти</button>
+            <button id="reg">Зарегистрироваться</button>
+            <button id="exit" class="disabled">Выйти</button>
+        </div>
+        <div id="response" class="service-response"></div>
+        <div class="service-events">
+            <div class="title">Последние события</div>
+            <div id="list_events" class="list-events"></div>
+        </div>
+    </div>
+</body>
+</html>
