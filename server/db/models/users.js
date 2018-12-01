@@ -3,7 +3,7 @@ const connection = require('../connection');
 
 const users = connection.define('users',
   {
-    name: DataTypes.STRING,
+    name: DataTypes.STRING, // TODO хранить полное имя и отдельно имя в нижнем регистре
     hash: DataTypes.STRING
   },
   {
